@@ -1,0 +1,133 @@
+2024-10-03T10:01:13.7247541Z Current runner version: '2.319.1'
+2024-10-03T10:01:13.7272936Z ##[group]Operating System
+2024-10-03T10:01:13.7273601Z Ubuntu
+2024-10-03T10:01:13.7274056Z 22.04.5
+2024-10-03T10:01:13.7274419Z LTS
+2024-10-03T10:01:13.7274767Z ##[endgroup]
+2024-10-03T10:01:13.7275221Z ##[group]Runner Image
+2024-10-03T10:01:13.7275657Z Image: ubuntu-22.04
+2024-10-03T10:01:13.7276075Z Version: 20240922.1.0
+2024-10-03T10:01:13.7277151Z Included Software: https://github.com/actions/runner-images/blob/ubuntu22/20240922.1/images/ubuntu/Ubuntu2204-Readme.md
+2024-10-03T10:01:13.7278632Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu22%2F20240922.1
+2024-10-03T10:01:13.7279743Z ##[endgroup]
+2024-10-03T10:01:13.7280182Z ##[group]Runner Image Provisioner
+2024-10-03T10:01:13.7280683Z 2.0.384.1
+2024-10-03T10:01:13.7281080Z ##[endgroup]
+2024-10-03T10:01:13.7297591Z ##[group]GITHUB_TOKEN Permissions
+2024-10-03T10:01:13.7299518Z Actions: write
+2024-10-03T10:01:13.7300228Z Attestations: write
+2024-10-03T10:01:13.7300763Z Checks: write
+2024-10-03T10:01:13.7301230Z Contents: write
+2024-10-03T10:01:13.7301642Z Deployments: write
+2024-10-03T10:01:13.7302026Z Discussions: write
+2024-10-03T10:01:13.7302501Z Issues: write
+2024-10-03T10:01:13.7302885Z Metadata: read
+2024-10-03T10:01:13.7303307Z Packages: write
+2024-10-03T10:01:13.7303759Z Pages: write
+2024-10-03T10:01:13.7304154Z PullRequests: write
+2024-10-03T10:01:13.7304607Z RepositoryProjects: write
+2024-10-03T10:01:13.7305123Z SecurityEvents: write
+2024-10-03T10:01:13.7305714Z Statuses: write
+2024-10-03T10:01:13.7306131Z ##[endgroup]
+2024-10-03T10:01:13.7308228Z Secret source: Actions
+2024-10-03T10:01:13.7309012Z Prepare workflow directory
+2024-10-03T10:01:13.7940847Z Prepare all required actions
+2024-10-03T10:01:13.8100241Z Getting action download info
+2024-10-03T10:01:13.9701205Z Download action repository 'actions/checkout@v4' (SHA:692973e3d937129bcbf40652eb9f2f61becf3332)
+2024-10-03T10:01:14.1698787Z Complete job name: acr
+2024-10-03T10:01:14.2711848Z ##[group]Run actions/checkout@v4
+2024-10-03T10:01:14.2712790Z with:
+2024-10-03T10:01:14.2713586Z   repository: docker/login-action
+2024-10-03T10:01:14.2714785Z   token: ***
+2024-10-03T10:01:14.2715511Z   ssh-strict: true
+2024-10-03T10:01:14.2716430Z   ssh-user: git
+2024-10-03T10:01:14.2717192Z   persist-credentials: true
+2024-10-03T10:01:14.2718136Z   clean: true
+2024-10-03T10:01:14.2719363Z   sparse-checkout-cone-mode: true
+2024-10-03T10:01:14.2720311Z   fetch-depth: 1
+2024-10-03T10:01:14.2721220Z   fetch-tags: false
+2024-10-03T10:01:14.2722033Z   show-progress: true
+2024-10-03T10:01:14.2722818Z   lfs: false
+2024-10-03T10:01:14.2723697Z   submodules: false
+2024-10-03T10:01:14.2724420Z   set-safe-directory: true
+2024-10-03T10:01:14.2725270Z ##[endgroup]
+2024-10-03T10:01:14.4761129Z Syncing repository: docker/login-action
+2024-10-03T10:01:14.4763340Z ##[group]Getting Git version info
+2024-10-03T10:01:14.4764269Z Working directory is '/home/runner/work/login-action/login-action'
+2024-10-03T10:01:14.4765646Z [command]/usr/bin/git version
+2024-10-03T10:01:14.4766940Z git version 2.46.1
+2024-10-03T10:01:14.4792726Z ##[endgroup]
+2024-10-03T10:01:14.4807760Z Temporarily overriding HOME='/home/runner/work/_temp/0c3be09b-1b7f-4b28-994b-6e38758456d7' before making global git config changes
+2024-10-03T10:01:14.4809748Z Adding repository directory to the temporary git global config as a safe directory
+2024-10-03T10:01:14.4821713Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/login-action/login-action
+2024-10-03T10:01:14.4857597Z Deleting the contents of '/home/runner/work/login-action/login-action'
+2024-10-03T10:01:14.4861293Z ##[group]Initializing the repository
+2024-10-03T10:01:14.4865728Z [command]/usr/bin/git init /home/runner/work/login-action/login-action
+2024-10-03T10:01:14.4929143Z hint: Using 'master' as the name for the initial branch. This default branch name
+2024-10-03T10:01:14.4930745Z hint: is subject to change. To configure the initial branch name to use in all
+2024-10-03T10:01:14.4932633Z hint: of your new repositories, which will suppress this warning, call:
+2024-10-03T10:01:14.4934152Z hint:
+2024-10-03T10:01:14.4935008Z hint: 	git config --global init.defaultBranch <name>
+2024-10-03T10:01:14.4935870Z hint:
+2024-10-03T10:01:14.4936573Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2024-10-03T10:01:14.4937731Z hint: 'development'. The just-created branch can be renamed via this command:
+2024-10-03T10:01:14.4938538Z hint:
+2024-10-03T10:01:14.4939385Z hint: 	git branch -m <name>
+2024-10-03T10:01:14.4940578Z Initialized empty Git repository in /home/runner/work/login-action/login-action/.git/
+2024-10-03T10:01:14.4945382Z [command]/usr/bin/git remote add origin https://github.com/docker/login-action
+2024-10-03T10:01:14.4976944Z ##[endgroup]
+2024-10-03T10:01:14.4977866Z ##[group]Disabling automatic garbage collection
+2024-10-03T10:01:14.4981012Z [command]/usr/bin/git config --local gc.auto 0
+2024-10-03T10:01:14.5008617Z ##[endgroup]
+2024-10-03T10:01:14.5009723Z ##[group]Setting up auth
+2024-10-03T10:01:14.5015552Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-10-03T10:01:14.5044348Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-10-03T10:01:14.5361819Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-10-03T10:01:14.5393160Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-10-03T10:01:14.5616457Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2024-10-03T10:01:14.5652368Z ##[endgroup]
+2024-10-03T10:01:14.5653905Z ##[group]Fetching the repository
+2024-10-03T10:01:14.5663009Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +29df2a9f8c71c2dfe7db598180a0460355ec1c00:refs/remotes/origin/master
+2024-10-03T10:01:15.6202308Z From https://github.com/docker/login-action
+2024-10-03T10:01:15.6210637Z  * [new ref]         29df2a9f8c71c2dfe7db598180a0460355ec1c00 -> origin/master
+2024-10-03T10:01:15.6232580Z ##[endgroup]
+2024-10-03T10:01:15.6240760Z ##[group]Determining the checkout info
+2024-10-03T10:01:15.6241996Z ##[endgroup]
+2024-10-03T10:01:15.6243102Z [command]/usr/bin/git sparse-checkout disable
+2024-10-03T10:01:15.6286660Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2024-10-03T10:01:15.6317058Z ##[group]Checking out the ref
+2024-10-03T10:01:15.6321607Z [command]/usr/bin/git checkout --progress --force -B master refs/remotes/origin/master
+2024-10-03T10:01:15.7024179Z Reset branch 'master'
+2024-10-03T10:01:15.7027068Z branch 'master' set up to track 'origin/master'.
+2024-10-03T10:01:15.7032316Z ##[endgroup]
+2024-10-03T10:01:15.7068713Z [command]/usr/bin/git log -1 --format='%H'
+2024-10-03T10:01:15.7090813Z '29df2a9f8c71c2dfe7db598180a0460355ec1c00'
+2024-10-03T10:01:15.7438327Z ##[group]Run ./
+2024-10-03T10:01:15.7438712Z with:
+2024-10-03T10:01:15.7439475Z   registry: ***.azurecr.io
+2024-10-03T10:01:15.7440024Z   username: ***
+2024-10-03T10:01:15.7440454Z   password: ***
+2024-10-03T10:01:15.7440814Z   ecr: auto
+2024-10-03T10:01:15.7441191Z   logout: true
+2024-10-03T10:01:15.7441551Z ##[endgroup]
+2024-10-03T10:01:16.0243350Z Logging into ***.azurecr.io...
+2024-10-03T10:01:21.1178997Z Login Succeeded!
+2024-10-03T10:01:21.1306319Z Post job cleanup.
+2024-10-03T10:01:21.4217296Z [command]/usr/bin/docker logout ***.azurecr.io
+2024-10-03T10:01:21.4364532Z Removing login credentials for ***.azurecr.io
+2024-10-03T10:01:21.4402600Z ##[group]Post cache
+2024-10-03T10:01:21.4403890Z State not set
+2024-10-03T10:01:21.4405207Z ##[endgroup]
+2024-10-03T10:01:21.4562364Z Post job cleanup.
+2024-10-03T10:01:21.5496229Z [command]/usr/bin/git version
+2024-10-03T10:01:21.5531838Z git version 2.46.1
+2024-10-03T10:01:21.5574871Z Temporarily overriding HOME='/home/runner/work/_temp/62884619-0a00-45b4-8c5c-9ce99394e5d8' before making global git config changes
+2024-10-03T10:01:21.5576705Z Adding repository directory to the temporary git global config as a safe directory
+2024-10-03T10:01:21.5580688Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/login-action/login-action
+2024-10-03T10:01:21.5614458Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2024-10-03T10:01:21.5644774Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2024-10-03T10:01:21.5869137Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2024-10-03T10:01:21.5888625Z http.https://github.com/.extraheader
+2024-10-03T10:01:21.5901089Z [command]/usr/bin/git config --local --unset-all http.https://github.com/.extraheader
+2024-10-03T10:01:21.5931476Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2024-10-03T10:01:21.6366776Z Cleaning up orphan processes
